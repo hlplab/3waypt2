@@ -27,7 +27,7 @@ var items = [
     ["intro", "Message", {html: {include: "intro.html"}}],
     ["info", "Form", {html: {include: "info.html"},
         validators: {
-            workerid: function(s) {if (pastworkers.indexOf(s) == -1) return true; else return "You have already done an RC SPR experiment";}
+            workerid: function(s) {if (pastworkers.indexOf(s) == -1) return true; else return "Sorry. You have already done a experiment in this series.";}
         }
     }],
     [["list_ordering", 0], "Separator", {transfer: 200, normalMessage: "The experiment will start momentarily"}],
